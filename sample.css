@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    /*padding LRを広げてboxsizing border-boxでサイズ調整*/
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+ }
+ .navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+ 
+ }
+  .logo{
+    width: 50px;
+    cursor: pointer;
+
+  }
+  .menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    
+  }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    /*リストを横並びにする*/
+    margin-left: 60px;
+    /*左側に余白をつけて文字同士を離す*/
+  }
+  nav ul li a{
+    text-decoration: none;
+    /*aタグの下線を消す*/
+    color: #fff;
+    font-size: 13px;
+  }
+  .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+  .col {
+    flex-basis: 50%;
+    /*横幅の50%に収める*/
+   
+  }
+
+    h1{
+      color: #fff;
+      font-size:100px;
+      text-shadow: 0 0 15px floralwhite;
+    }
+    p{
+      color: #fff;
+      font-size: 11px;
+      line-height: 15px;
+      /*行間の幅を調整している*/
+
+    }
+    button{
+      width: 180px;
+        color: #000;
+        font-size: 12px;
+        padding: 12px 0;
+        /*ボタン内側に上下12　左右0の余白*/
+        background: #fff;
+        border: 0;
+        /*淵をなくす*/
+        border-radius: 20px;
+        /*角に丸みを与える*/
+        outline: none;
+        margin-top: 30px;
+        /*ボタンとボタン上部の余白（テキストとの間）の調整*/
+
+     }
+     .card{
+      
+       width: 200px;
+       height: 230px;
+       display: inline-block;
+       /*カード4枚が均等に並んだ　２＊２*/
+       border-radius: 10px;
+       /*角に丸みを与える*/
+       padding: 15px 25px;
+        /*外側に縦15横25広げる*/
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        /*カード同士の間に余白を与える*/
+        background-image: url(images/pic-1.png);
+        background-position: center;
+        /*fotoの位置を真ん中をうつすようにする*/
+        background-size: cover;
+        /*引きで全体をうつす*/
+        transition: transform 0.5s;
+      }
+      .card1{
+        background-image: url(images/pic-1.png);
+      }
+
+      .card2{
+        background-image: url(images/pic-2.png);
+      }
+      .card3{
+        background-image: url(images/pic-3.png);
+      }
+      .card4{
+        background-image: url(images/pic-4.png);
+      }
+      .card:hover{
+        transform: translateY(-10px);
+        /*.cardノほうも調整　transition: transform 0.5s;*/
+
+
+      }
+      h5{
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+      }
+      .card p{
+        text-shadow: 0 0 15px rgb(10, 1, 1);
+        font-size: 8px;
+        /*text shadowの3つの数値は右　左　下の順*/
+      }
+  
+    
+  
+  
